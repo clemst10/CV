@@ -1,0 +1,342 @@
+@font-face {
+    font-family: "handwritting-draft";
+    src: url(/handwriting_draft/handwriting-draft_free-version.ttf);
+}
+
+body{
+    background: rgb(242, 242, 242);
+    padding: 100px;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: "handwritting-draft";
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border: solid 3px rgb(31, 112, 199);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(126, 126, 126);
+    background: linear-gradient(rgb(12, 100, 194),rgb(31, 112, 199) );
+}
+strong{
+    color:rgb(31, 112, 199)
+}
+.boutonhome{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(31, 112, 199);
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    border-radius: 10px;
+    
+}
+
+/*haut de page et bas de page*/
+header, footer{
+    width: 100%;
+    height: 100px;
+    background: rgb(38, 38, 38);
+}
+
+header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+header a{
+    display: flex;
+    align-items: center;
+    filter: contrast(150%);
+}
+header img:hover{
+    filter: contrast(200%);
+}
+
+.menu{
+    display: flex;
+    justify-content: start;
+    width: 60%;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+
+.menu li a{
+    color: rgb(147, 147, 147);
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-weight: bold;
+    margin: 10px;
+}
+
+.menu a:hover{
+    color: white;
+    border-bottom: solid 2px white;
+}
+
+/*deux bloc (apropos et contact)*/
+.presentation{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+section.contact{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-info{
+    margin-left: 120px;
+}
+section.apropos{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.apropos h2{
+    margin-bottom: 20px;
+}
+.apropos{
+    text-align: center;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style-type:  none;
+}
+
+.contact img{
+    width: 15px;
+    height: 15px;
+    vertical-align: -2px;
+}
+
+.contact a{
+    color: rgb(76, 135, 198);
+    text-decoration: none;
+}
+.contact a:hover{
+    color: rgb(44, 113, 187);
+    text-decoration: none;
+}
+
+.contact-info{
+    margin-top: 100px;
+}
+
+/*experience*/
+
+.exp{
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*deux bloc (competence perso et pro)*/
+.competence{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+section.perso{
+    margin-right: 20px;
+}
+section.pro{
+    margin-left: 20px;
+}
+
+/*style des blocs*/
+section{
+    width: 90%;
+    padding: 60px;
+    padding-top: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/*bloc formation*/
+
+.formation{
+    margin-top: 40px ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.bloc1{
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info{
+    padding-left: 30px;
+}
+
+/*competence perso*/
+.barre{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 10px;
+}
+
+.barre-travaille{
+    width: 88%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+
+.barre-discret{
+    width: 98%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+.barre-presentation{
+    width: 83%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+.barre-curieux{
+    width: 80%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+.barre-calme{
+    width: 90%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+.barre-observateur{
+    width: 95%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+
+/*competence pro*/
+
+.barre-html{
+    width: 69%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+
+.barre-css{
+    width: 59%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+.barre-JS{
+    width: 10%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+.barre-python{
+    width: 40%;
+    height: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+
+.option{
+    width: 100%;
+    height: auto;
+    text-align: center; 
+
+}
+
+.bouton-telechargement a{
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    border: solid 2px rgb(31, 112, 199);
+    color: rgb(31, 112, 199);
+    border-radius: 2px;
+}
+
+.bouton-telechargement a:hover{
+    background: rgb(31, 112, 199);
+    color: white;
+}
+
+/*centre d'interet*/
+
+.interet{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.interet img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgb(116, 116, 116);
+}
+
+footer{
+    position: absolute;
+    left: 0px;
+    color:  white;
+    text-align: center;
+}
