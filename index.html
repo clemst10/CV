@@ -7,27 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <title>CV</title>
     <link rel="icon" href="img/photo.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
-    <script>
-        $(document).ready(function() {
-        $('a[href*="presentation"]').click( function() { // Au clic sur un élément
-        var page = $(this).attr('href'); // Page cible
-        var ancre = page.replace('#','');
-        var coordonnees = $('a[name="' + ancre + '"]').offset().top;
-        var speed = 750; // Durée de l'animation (en ms)
-        $('html, body').animate( { scrollTop: coordonnees }, speed ); // Go
-        return false;
-        });
-        });
-    </script>
+    
     <header>
         <h1> CV Rodrigues Clément</h1>
         <div class="menu">
             <ul>
-                <li><a href="#presentation">A propos</a></li>
+                <li><a href="#presentation" >A propos</a></li>
                 <li><a href="#presentation">Contact</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#formation">Formation</a></li>
