@@ -91,6 +91,7 @@ header img:hover{
 .menu li:hover{
     color: white;
     border-bottom: solid 2px white;
+    cursor: pointer;
 }
 
 /*deux bloc (apropos et contact)*/
