@@ -15,12 +15,12 @@
         <h1> CV Rodrigues Clément</h1>
         <div class="menu">
             <ul>
-                <li><a href="#presentation" >A propos</a></li>
-                <li><a href="#presentation">Contact</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#competence">Compétence</a></li>
-                <li><a href="#interet">Centre d'interet</a></li>
+                <li id="presentation2" data-block= "presentation">A propos</li>
+                <li id="presentation2" data-block= "presentation">Contact</li>
+                <li id="experience2" data-block= "experience">Experience</a></li>
+                <li id="formation2" data-block= "formation">Formation</a></li>
+                <li id="competence2" data-block= "competence">Compétence</a></li>
+                <li id="interet2" data-block= "interet">Centre d'interet</a></li>
             </ul>
         </div>
         <a href="https://www.linkedin.com/in/clément-rodrigues-571254216/" target="_blank" rel="noopener noreferrer"><img src="img/linkdin.png" alt=""></a>
@@ -235,3 +235,15 @@
 </body>
 
 </html>
+
+<script defer>
+    function handleClickLink(event) {
+    const block = event.target.dataset.block;
+    console.log(block)
+    document.getElementById(block).scrollIntoView({ behavior: 'smooth'});
+}
+
+    document.querySelectorAll('li').forEach((elem) => {
+    elem.addEventListener('click', handleClickLink);
+});
+</script>

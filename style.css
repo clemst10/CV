@@ -80,7 +80,7 @@ header img:hover{
 }
 
 
-.menu li a{
+.menu li {
     color: rgb(147, 147, 147);
     text-decoration: none;
     text-transform: uppercase; 
@@ -88,7 +88,7 @@ header img:hover{
     margin: 10px;
 }
 
-.menu a:hover{
+.menu li:hover{
     color: white;
     border-bottom: solid 2px white;
 }
