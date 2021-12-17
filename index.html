@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <title>CV</title>
     <link rel="icon" href="img/photo.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
-    
+    <script>
+        $(document).ready(function() {
+        $('a[href*="presentation"]').click( function() { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var ancre = page.replace('#','');
+        var coordonnees = $('a[name="' + ancre + '"]').offset().top;
+        var speed = 750; // Durée de l'animation (en ms)
+        $('html, body').animate( { scrollTop: coordonnees }, speed ); // Go
+        return false;
+        });
+        });
+    </script>
     <header>
         <h1> CV Rodrigues Clément</h1>
         <div class="menu">
@@ -42,7 +54,7 @@
                 <p><img src="img/pos.png" alt=""> 14 rue Jules Guesde – Cenon</p>
                 <p><img src="img/tel.png" alt=""> <a href="tel:+33651999531">0651999531</a></p>
                 <p><img src="img/mail.png" alt=""><a href="mailto:clement.rodrigues16@gmail.com"> clement.rodrigues16@gmail.com</a></p>
-                <p><img src="img/anniv.png" alt=""> 20 ans</p>
+                <p><img src="img/anniv.png" alt=""> 21 ans</p>
                 <p><img src="img/car.png" alt=""> Permis:  B</p>
             </div>
         </section>

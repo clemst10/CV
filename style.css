@@ -340,3 +340,7 @@ footer{
     color:  white;
     text-align: center;
 }
+
+*{
+    scroll-behavior: smooth;
+}
